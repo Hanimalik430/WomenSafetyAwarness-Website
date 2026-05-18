@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emergency Page</title>
+    <style>
+         *
+        {
+            margin:0px;
+            padding:0px;
+        }    
+     nav
+     {
+        background-color:palevioletred;
+        padding: 8px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: 5px; 
+        font-weight:bold ; 
+     }
+     a
+     {
+        color:black;
+        font-size: 20px;
+        text-decoration: none;
+        flex-shrink:1;
+     }
+    a:hover
+     {
+        color:purple;
+     }
+     .hero
+     {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:5px;
+        margin: 10px;
+     }
+     .main
+     {
+       color:rgb(120, 1, 41);
+       opacity: 0.5px;
+       padding: 5px;
+       font-size: 60px;
+     }
+     @media (max-width: 480px)
+     {.main{
+        font-size: 40px;
+     }}
+      .submain
+     {
+       color: black;
+       opacity: 0.5px;
+       padding: 5px;
+       gap: 5px;
+       word-spacing: 7px;
+       font-size: 25px;
+     }
+      @media (max-width: 480px)
+    {.submain{
+        font-size: 15px;
+    }}
+    .cards
+        {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+            padding:40px;
+        }
+
+        .card
+        {
+            background:white;
+            width:250px;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 0 10px gray;
+            transition:0.3s;
+            border: 2px solid rgb(120, 1, 41);
+        }
+
+        .card:hover
+        {
+            transform:scale(1.05);
+            background-color: lightsalmon;
+        
+        }
+         h2
+        {
+            color:rgb(120, 1, 41);
+            margin-bottom:10px;
+        }
+        p
+        {
+            font-size:25px;
+            font-weight:bold;
+        }
+         .steps
+        {
+            display: flex;
+            flex-direction: column;
+            padding:40px;
+            text-align:center;
+        }
+
+        .steps h1
+        {
+            color:rgb(120, 1, 41);
+            margin-bottom:20px;
+        }
+
+        ul
+        {
+            list-style:none;
+            font-size:22px;
+        }
+
+        li
+        {
+            padding:10px;
+        }
+        @keyframes bounce
+        {
+            0%{transform: translateY(0px);
+            background-color: lightsalmon;}
+            50%{transform: translateY(20px);}
+        }
+         .apps
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding:40px;
+            text-align:center;
+        }
+
+        .apps h1
+        {
+            color:rgb(120, 1, 41);
+            margin-bottom:20px;
+        }
+
+        .app-box
+        {
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+
+        .app
+        {
+            background:white;
+            width:220px;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 0 10px gray;
+             animation-name: bounce;
+            animation-timing-function:7px ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .class
+        {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        footer
+     {
+        padding: 4px;
+        align-content: center;
+        color:black;
+        background-color:palevioletred;
+        margin: 10px;
+        text-align: center;
+     }
+    </style>
+</head>
+<body>
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="SafetyTipsPage.html">Safety Tips</a>
+       <a href="Selfdefensepage.html">Self Defense</a>
+       <a href="Emergencypage.html">Emergency Helps</a>
+       <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1 class="main">Emergency Helps</h1>
+        <h4 class="submain">"Quick access to important help and safety contacts."</h4>
+    </div>
+     
+    <div class="cards">
+       <div class="card">
+            <h2>📞 Police</h2>
+            <p>15</p>
+        </div>
+
+        <div class="card">
+            <h2>🚑 Ambulance</h2>
+            <p>1122</p>
+        </div>
+
+        <div class="card">
+            <h2>🔥 Fire Brigade</h2>
+            <p>16</p>
+        </div>
+
+        <div class="card">
+            <h2>👩 Women Helpline</h2>
+            <p>1099</p>
+        </div>
+
+        <div class="card">
+            <h2>🚨 Rescue Service</h2>
+            <p>1122</p>
+        </div>
+     </div>
+        <div class="class">
+     <div class="steps">
+      <h1><u>What To Do In Emergency:</u></h1>
+        <ul>
+            <li>✔ Stay calm</li>
+            <li>✔ Call emergency number</li>
+            <li>✔ Share your location</li>
+            <li>✔ Move to safe place</li>
+            <li>✔ Inform family</li>
+        </ul>
+     </div>
+    <div class="apps">
+
+        <h1>Safety Apps</h1>
+
+        <div class="app-box">
+
+            <div class="app">
+                <h2>📱 Rescue Apps</h2>
+            </div>
+
+            <div class="app">
+                <h2>📍 Location Sharing Apps</h2>
+            </div>
+
+            <div class="app">
+                <h2>🚨 Emergency SOS</h2>
+            </div>
+
+        </div>
+    </div>
+    </div>
+     <footer>
+        <p>&copy;2026Women Safety Awarness | All right reserved.</p>
+     </footer>
+</body>
+</html>

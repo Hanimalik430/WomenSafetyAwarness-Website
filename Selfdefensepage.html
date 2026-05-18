@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Self Defense Page</title>
+    <style>
+        *
+        {
+            margin:0px;
+            padding:0px;
+        }    
+     nav
+     {
+        background-color:palevioletred;
+        padding:8px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: 5px;  
+        margin-bottom: 0px;
+        font-weight: bold;
+     }
+     a
+     {
+        color:black;
+        font-size: 20px;
+        text-decoration: none;
+        flex-shrink:1;
+     }
+    select:hover,a:hover
+     {
+        color:purple;
+     }
+     select
+     {
+        text-decoration: none;
+        cursor:pointer;
+        color:black;
+        background-color:palevioletred;
+        border: 0px ;
+        gap: 0px;
+        font-weight: bold;
+     }
+     option
+     {
+     gap: 5px;
+     }
+     option:hover
+     {
+        color:purple;
+     }
+     .hero
+     {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:5px;
+        margin: 10px;
+     }
+     .main
+     {
+       color: black;
+       opacity: 0.5px;
+       padding: 5px;
+       font-size: 70px;
+     }
+     @media (max-width: 480px)
+     {.main{
+        font-size: 40px;
+     }}
+      .submain
+     {
+       color:black;
+       opacity: 0.5px;
+       padding: 5px;
+       gap: 5px;
+       word-spacing: 7px;
+       font-size: 25px;
+     }
+      @media (max-width: 480px)
+    {.submain{
+        font-size: 15px;
+    }}
+    .editmain
+    {
+        height: 810px;
+        background-image: linear-gradient(rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2)),url(istockphoto-2097346937-1024x1024.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+        
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 15px;
+        gap: 30px;
+    }
+    @keyframes summ
+    {
+        0%{transform: translateY(0px);}
+        50%{transform:translateY(25px);
+        border-radius: 10px;}
+    }
+    summary
+    {
+        font-size: 25px;
+        color: black;
+        font-weight: 200px;
+        
+    }  
+   .item
+    {
+        border:4px solid  rgb(120, 1, 41) ;
+        box-shadow: 0px 0px 15px grey;
+        gap: 10px;
+        font-size: 20px;
+        padding: 10px;
+        padding-left: 20px;
+         animation-name: summ;
+        animation-timing-function: 5px;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    .item:hover
+    {
+       transform:scale(1.05);
+       background:#ffeaea;
+
+    }
+    li
+    {
+        padding-left: 7px;
+        gap: 7px;
+        
+        text-decoration:none ;
+        color: rgb(120, 1, 41);
+    }
+     footer
+     {
+        padding: 4px;
+        align-content: center;
+        color: white;
+        background-color:rgb(106, 28, 178);
+        margin: 10px;
+        text-align: center;
+         margin-left: 5px;
+       margin-right: 5px;
+        margin-top: 0px;
+     }
+    </style>
+</head>
+<body>
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="SafetyTipsPage.html">Safety Tips</a>
+    <select onchange="location = this.value;">
+        <option value="#Selfdefensepage.html">Self Defense</option>
+        <option  value="#B">Basic Self Defense</option>
+        <option  value="#A">Awarness Techniqiues</option>
+        <option  value="#C">Confidence Building</option>
+        <option  value="#S">Safe Escape Tips</option>
+        <option  value="#E">Emergency Actions</option>
+    </select>
+       <a href="Emergencypage.html">Emergency Helps</a>
+       <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="editmain">
+        
+    <div class="hero">
+        <h1 class="main">Self Defense Basics</h1>
+        <h4 class="submain">"Learn simple ways to protect yourself and stay confident."</h4>
+    </div>
+    <div class="content">
+    <div class="item">
+    <details>
+        <summary id="B">Basic Self Defense</summary>
+    <ul>
+      <li>Learn simple blocking techniques.</li>
+      <li>Use your voice to attract attention.</li>
+      <li>Target weak points like eyes and knees.</li>
+      <li>Practice self-defense regularly.</li>
+    </ul>
+       </details>
+        </div>
+        <div class="item">
+    <details>
+        <summary id="A">Awareness Techniqiue</summary>
+        <ul>
+            <li> Stay alert in public places</li>
+            <li> Keep distance from strangers </li>
+            <li> Trust your instincts </li>
+            <li> Avoid risky situations </li>
+            <li> Stay in well-lit areas </li>
+            </li>
+        </ul>
+    </details>
+     </div>
+     <div class="item">
+    <details>
+        <summary id="C">Confidence Building</summary>
+     <ul>
+      <li>Walk with confidence and good posture.</li>
+      <li>Speak clearly and firmly.</li>
+      <li>Practice decision-making skills.</li>
+      <li>Believe in your ability to stay safe.</li>
+     </ul>
+    </details>
+     </div>
+     <div class="item">
+    <details>
+        <summary id="S">Safe Escape Tips</summary>
+   <ul>
+      <li>Look for the nearest safe exit.</li>
+      <li>Run toward crowded areas for help.</li>
+      <li>Keep emergency contacts ready.</li>
+      <li>Avoid carrying heavy items while escaping.</li>
+   </ul>
+    </details>
+     </div>
+     <div class="item">
+    <details><summary id="E">Emergency Actions</summary>
+   <ul>
+      <li>Call emergency services immediately.</li>
+      <li>Stay calm during emergencies.</li>
+      <li>Share your location with trusted people.</li>
+      <li>Move to a safe and secure place.</li>
+    </ul>
+    </details>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy;2026Women Safety Awarness | All right reserved.</p>
+     </footer>
+</body>
+</html>

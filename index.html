@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+         *
+        {
+            margin:0px;
+            padding:0px;
+        }    
+     nav
+     {
+        background-color:palevioletred;
+        padding:8px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        margin: 5px;  
+     }
+     a
+     {
+        color:black;
+        font-size: 20px;
+        text-decoration: none;
+        flex-shrink:1;
+        font-weight: bold;
+     }
+     select:hover,a:hover
+     {
+        color:purple;
+     }
+     select
+     {
+        text-decoration: none;
+        cursor:pointer;
+        color:white;
+        background-color:palevioletred;
+        border: 0px ;
+        gap: 0px;
+     }
+     option
+     {
+     gap: 5px;
+     font-size: 15px;
+     }
+     option:hover
+     {
+        color:purple;
+     }
+      .hero
+     {
+        height: 1100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:5px;
+        margin: 10px;
+        text-shadow: 0px 2px 3px rgb(176, 90, 176);
+        background-image:linear-gradient(rgba(255,255,255,0.2),
+    rgba(255,255,255,0.2)), url(susan-lu4esm-happy-day-of-the-woman-4037497_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     .main
+     {
+       color: white;
+       opacity: 0.5px;
+       padding: 5px;
+       font-size: 70px;
+     }
+     @media (max-width: 480px)
+     {.main{
+        font-size: 40px;
+     }}
+      .submain
+     {
+       color:white;
+       opacity: 0.5px;
+       padding: 5px;
+       gap: 5px;
+       letter-spacing: 4px;
+       font-size: 20px;
+     }
+      @media (max-width: 480px)
+    {.submain{
+        font-size: 15px;
+    }}
+    button
+    {
+        text-decoration: none;
+        border: 0px;
+        background-color: white;
+        border-radius: 7px;
+        padding: 8px;
+        margin-top:25px;
+        color: black;
+        font-size: 25px;
+        box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+        transition: 0.2s;
+
+    }
+    button:hover
+    {
+        background-color: burlywood;
+        color: black;
+        transform: scale(1.05);
+    }
+    .card
+    {
+        transition-property: height,width;
+        transition: 0.3s;
+        transition-delay: 0.2s;
+        transition-timing-function: 3px;
+        
+    }
+    .card:hover{
+        transform: scale(1.10);
+
+    }
+   
+    .card-body 
+    {
+        border: 4px solid black;
+        color:black;
+        box-shadow: 5px 5px 0px grey;
+        color:rgb(198, 96, 188);
+        font-size: 20px;
+    }
+   
+     
+     .para
+     {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:100px;
+        margin:10px;
+     }
+     .item p   
+    {
+        font-size: 19px;
+         gap: 15px;
+         padding-top: 5px;
+         color: rgb(120, 1, 41);
+         font-weight:bold;
+    }
+     .item h3
+    {
+        color:black;
+        padding: 5px;
+        font-size:25px;
+        gap: 15px;
+        font-weight: bold;
+    }
+    .card-title 
+     {
+      color: black ; 
+      font-weight: bold;
+      font-size: 30px;
+     }
+      .card-text
+     {
+      color: rgb(120, 1, 41) ; 
+     }
+     
+      .card1
+    {
+       
+       display: flex;
+       flex-wrap: wrap; 
+       padding: 8px;
+       margin:10px; 
+       justify-content:center;
+       gap: 30px;
+       padding-left: 30px;
+        padding-right: 30px;
+         
+    }
+    .item:hover
+        {
+            transform:scale(1.05);
+            background-color: rgb(222, 170, 187);
+        
+        }
+    .item
+    {
+        height:150px;
+        width: 270px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        border: 4px solid rgb(120, 1, 41);
+        padding:7px ;
+        margin: 7px;
+        align-content: center;
+        border-radius: 15px;
+        text-align: center;
+         transition:0.3s; 
+         
+     }
+     footer
+     {
+        height: 30px;
+        align-content: center;
+        color: white;
+        background-color:palevioletred;
+        margin: 10px;
+        text-align: center;
+     }
+     footer p
+     {
+        color: black;
+        font-weight: bold;
+     }
+
+    </style>
+</head>
+<body>
+    <nav>
+       <a href="">Home</a>
+        <a href="SafetyTipsPage.html">Safety Tips</a>
+        <a href="Selfdefensepage.html">Self Defense</a>
+       <a href="Emergencypage.html">Emergency Helps</a>
+       <a href="contactus.html">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1 class="main">Women Safety Awarness</h1>
+        <h4 class="submain">"Stay aware,stay safe,stay confident"</h4>
+        <a href =#web><button><strong>Explore Safety Tips</strong></button></a>
+    </div>
+   
+
+   
+<div class="para">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body text-primary">
+    <h5 class="card-title"><u>Website Purpose:</u></h5>
+    <p class="card-text">This website is created to spread awareness about women’s safety and provide helpful guidance for daily 
+        life. It shares important safety tips, emergency information, and self-defense awareness to help women
+         stay informed, alert, and confident in different situations.</p>
+  </div>
+    </div>
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body text-primary">
+    <h5 class="card-title"><u>Women Safety Importance:</u></h5>
+    <p class="card-text">Shis website is created to spread awareness about women’s safety and provide helpful guidance for daily 
+        life. It shares important safety tips, emergency information, and self-defense awareness to help women
+         stay informed, alert, and confident in different situations.</p>
+  </div>
+    </div>
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body text-primary">
+    <h5 class="card-title"><u>Awareness Message:</u></h5>
+    <p class="card-text">Awareness is the first step toward safety and protection. Knowing basic safety tips, staying alert, 
+    and understanding emergency actions can help prevent dangerous situations and encourage women to make
+    smart and confident decisions in daily life.</p>
+  </div>
+    </div>
+</div>
+</div>
+<div class="card1">
+        
+        <div class="item"><h3>Share Location</h3>
+            <p>Always share your live location with trusted family members.</p></div>
+        <div class="item"><h3>Stay Alert</h3>
+            <p>Stay aware of your surroundings in public places.</p></div>
+        <div class="item"><h3>Safe Transport</h3>
+            <p>Use trusted and reliable transport service.</p></div>
+        <div class="item"><h3>Avoid Isolated Areas</h3>
+            <p>Stay in well-lit and crowded places at night.</p></div>
+        <div class="item"><h3>Emergency Contacts</h3>
+            <p>Save emergency numbers for quick access.</p></div>
+        <div class="item"><h3>Trust Your Instincts</h3>
+            <p>Leave immediately if a situation feels unsafe.</p></div>
+     </div>
+     <footer>
+        <p>&copy;2026Women Safety Awarness | All right reserved.</p>
+     </footer>
+</body>
